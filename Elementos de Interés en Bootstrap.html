@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elementos de Interes de Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div
+      class="container-md"
+      style="
+        margin-top: 1rem;
+        margin-left: 1rem;
+        padding: 1rem;
+        width: 50vw;
+        background-color: aqua;
+        justify-content: center;
+        border-radius: 1rem;
+      "
+    >
+      <h1>Este es mi Jumbotron</h1>
+      <p>
+        Este jumbotron va a abrir una ventana modal cuando presionemos el boton
+      </p>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop"
+      >
+        Abrir ventana modal-footer
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Esta es mi ventana Modal
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">esta es el detalle de la ventana modal</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <button type="button" class="btn btn-primary">Entendido</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-md"
+    style="
+      margin-top: 1rem;
+      margin-left: 1rem;
+      padding: 1rem;
+      width: 70vw;
+      background-color: rgb(255, 0, 255);
+      justify-content: center;
+      border-radius: 1rem;
+    ">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
+        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Teléfono">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Describe tus talentos como programador</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div>
+    <div class="container-md"
+    style="
+      margin-top: 1rem;
+      margin-left: 1rem;
+      padding: 1rem;
+      width: 50vw;
+      background-color: rgb(55, 0, 255);
+      justify-content: center;
+      border-radius: 1rem;
+    ">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">David Eskenazi</h5>
+          <p class="card-text">Profesional con mucho interes en aprender todos los días algo nuevo</p>
+          <a href="#" class="card-link">detbin@hotmail.com</a>
+        </div>
+      </div>
+   </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+</html>
